@@ -1,0 +1,22 @@
+.eye{
+    position: absolute;
+    right: 10px;
+    top: 60%;
+}
+
+.login-page{
+    background-image:url('../images/background-login.jpg');
+    background-size: cover;
+  }
+  
+  .login-page .content{
+    min-width: 430px;
+  }
+  
+  .login-page .welcome-text .fa-male{
+    font-size: 25px;
+  }
+  
+  .login-page .welcome-text span{
+    font-size: 20px;
+  }

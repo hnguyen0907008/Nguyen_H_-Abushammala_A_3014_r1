@@ -1,0 +1,20 @@
+// $_SESSION — Session variables:
+https://www.php.net/manual/en/reserved.variables.session.php
+
+// session_destroy — Destroys all data registered to a session:
+https://www.php.net/manual/en/function.session-destroy.php
+
+// PHP - Sessions:
+https://www.tutorialspoint.com/php/php_sessions.htm
+
+// PHP - Constants Types:
+https://www.tutorialspoint.com/php/php_constants.htm
+
+// session_unset — Free all session variables:
+https://www.php.net/manual/en/function.session-unset.php
+
+// header — Send a raw HTTP header:
+https://www.php.net/manual/en/function.header.php
+
+// PHP header() Function:
+https://www.w3schools.com/php/func_network_header.asp

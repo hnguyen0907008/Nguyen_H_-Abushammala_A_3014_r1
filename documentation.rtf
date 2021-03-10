@@ -1,0 +1,39 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red6\green6\blue6;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c1961\c1961\c1961;\csgray\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww19280\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 DOCUMENTATION\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Installation:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+the first step to run this project is to make a mysql database named 
+\f1\b user_login
+\f0\b0 ,\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+then you must import a users table from the relative path: database/user_login.sql\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+then you need just to copy the project folder and past it on your htdocs folder and access on it directly from any browser.\
+\pard\tx566\pardeftab720\partightenfactor0
+\cf2 *) The database that I sent you has a problem that it contains user_ip column, which stops users from logging in. What you need to do is remove it. I also include the new database (without user_ip) so you can test.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+Usage:\
+\
+On the first page of the project (index.php) the system display a view contains a form with 2 fields email and password and 2 buttons one for login and the second for the register.\
+\
+The password saved on the database on hashed format not a plaintext, so if you want to make a new user you need to make it from signup button, not from phpmyadmin.\
+\
+If the user fill the fields and press the login button, the system check if the email exist or not. If yes, the system check if if this account it's locked or not. If the user access locked, the system show a warning message; if not, the system check his password if true or not. If the password is true the system increment number_of_success_access on users table and redirect the user to dashboard page. If the password is incorrect the system increment number_of_failed_access and the system display a failed login.\
+\
+Another thing if the user fill all fields and click on the signup button the system will create the user on the database and redirect the user to his dashboard page.}
